@@ -1,30 +1,31 @@
 import "./Header.css";
 import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
       <section className="header">
         <nav>
-          <a href="index.html">
+          <Link to="./index.html">
             <img src={logo} />
-          </a>
+          </Link>
           <div className="nav-links" id="navLinks">
             {/* <i className="fa-solid fa-times" onclick="hideMenu()"></i> */}
             <ul>
               <li>
-                <a href="">HOME</a>
+                <Link to="./">HOME</Link>
               </li>
               <li>
-                <a href="">ABOUT</a>
+                <Link to="./">ABOUT</Link>
               </li>
               <li>
-                <a href="">COURSE</a>
+                <Link to="./">COURSE</Link>
               </li>
               <li>
-                <a href="">BLOG</a>
+                <Link to="./">BLOG</Link>
               </li>
               <li>
-                <a href="">CONTACT</a>
+                <Link to="./">CONTACT</Link>
               </li>
             </ul>
           </div>
