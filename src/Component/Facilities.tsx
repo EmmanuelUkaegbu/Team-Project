@@ -1,5 +1,7 @@
 const Facilities = () => {
-  return <div></div>;
+  return <div>
+    
+  </div>;
 };
 
 export default Facilities;
