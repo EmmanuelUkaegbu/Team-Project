@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+/* ---------Footer------------- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  /* background-image:
+    radial-gradient(darkblue, rgba(11, 11, 11, 0.585)),
+    url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box; */
+  margin-top: 30%;
+  max-height: fit-content;
+  position: sticky;
+}
+.footer h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  padding-top: 50px;
+  color: rgb(161, 105, 32);
+}
+.footer p {
+  font-family: sans-serif, serif;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 10%;
+  font-weight: xx-large;
+  box-sizing: content-box;
+  max-width: 40%;
+  margin-left: 20%;
+  /* color: aliceblue; */
+  color: rgb(121, 118, 118);
+}
+.icons {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+
+.icon-box {
+  /* background-color: black; */
+  background: linear-gradient(rgb(65, 49, 49), rgb(4, 4, 14));
+  border-style: none;
+  border-radius: 2px 15px;
+  padding-top: 5px;
+  height: fit-content;
+  width: fit-content;
+  margin: 3px;
+  /* padding-right: -5px; */
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.icons {
+  align-items: center;
+  /* margin: 0 13px; */
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 20px;
+  text-shadow: rgb(206, 12, 12) 15px;
+  animation: Bouncing 3.3s infinite ease-in-out;
+}
+.icons .icon-box::before {
+  color: #f44336;
+}
+.facebook-icon {
+  color: #1877f2;
+  animation: Rotate360 3s infinite linear;
+  animation-delay: 0s;
+}
+
+.whatsapp-icon {
+  color: rgb(13, 228, 13);
+  animation: Rotate360 3s infinite linear; /* transition: ease in-out; */
+  animation-delay: 0.5s;
+}
+.twitter-icon {
+  color: #1da1f2;
+  animation: Rotate360 3s infinite linear;
+}
+
+.instagram-icon {
+  color: #e4405f;
+  animation: Rotate360 3s infinite linear;
+
+  animation-delay: 1s;
+}
+.linkedin-icon {
+  color: #1877f2;
+  animation: Rotate360 3s infinite linear;
+  animation-delay: 1.5s;
+}
+.Love-icon {
+  color: rgba(183, 13, 13, 0.903);
+  background-color: burlywood;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: x-large;
+  animation: Bouncing 3s infinite ease-in-out;
+  animation-delay: 3s;
+  /* color-scheme: var(blue); */
+}
+
+/* On smaller screens, stack vertically */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-height: auto;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .p {
+    font-size: 1.2rem;
+    max-height: auto;
+    line-height: 1.8;
+    padding: 20px;
+  }
+}
+
+@keyframes Bouncing {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: translateY(-10px);
+  } /* move upward */
+  100% {
+    transform: translateY(0);
+  } /* back down */
+}
+
+@keyframes Rotate360 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
