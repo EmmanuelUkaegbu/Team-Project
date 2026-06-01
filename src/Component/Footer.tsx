@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import { FaFacebookSquare } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { TfiTwitterAlt } from "react-icons/tfi";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { GrLinkedin } from "react-icons/gr";
-import { PiHandHeartDuotone } from "react-icons/pi";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const Footer = () => {
   return (
@@ -26,34 +26,34 @@ const Footer = () => {
         <div className="icons">
           <div className="icon-box">
             <Link to={"https://Facebook.com"}>
-              <FaFacebookSquare className="facebook-icon" />
+              <FacebookIcon className="facebook-icon" />
             </Link>
           </div>
           <div className="icon-box">
             <Link to="https://twitter.com">
-              <TfiTwitterAlt className="twitter-icon" />
+              <XIcon className="twitter-icon" />
             </Link>
           </div>
 
           <div className="icon-box">
             <Link to="https://whatsapp.com">
-              <IoLogoWhatsapp className="whatsapp-icon" />
+              <WhatsAppIcon className="whatsapp-icon" />
             </Link>
           </div>
           <div className="icon-box">
             <Link to="https://instagram.com">
-              <RiInstagramFill className="instagram-icon" />
+              <InstagramIcon className="instagram-icon" />
             </Link>
           </div>
           <div className="icon-box">
             <Link to="https://linkedin.com">
-              <GrLinkedin className="linkedin-icon" />
+              <LinkedInIcon className="linkedin-icon" />
             </Link>
           </div>
         </div>
         <p>
           made with
-          <PiHandHeartDuotone className="Love-icon" />
+          <FavoriteIcon className="Love-icon" />
           by easy Tutorials
         </p>
       </section>
