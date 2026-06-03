@@ -1,25 +1,34 @@
 .facilities {
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: center;
-  padding-top: 100;
+  padding-top: 100px;
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .facilities-col {
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
+  flex: 1;
+  max-width: 300px; /* reduces card size */
   text-align: left;
 }
+
 .facilities-col img {
   width: 100%;
+  height: 300px; /* smaller image height */
+  object-fit: cover;
   border-radius: 10px;
+}
+
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
 }
 
 .facilities-col p {
   padding: 0;
-}
-.facilities-col h3 {
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: left;
 }
