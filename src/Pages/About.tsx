@@ -1,4 +1,5 @@
 import "./About.css";
+import image from "../assets/images/library.png";
 
 const About = () => {
   return (
@@ -34,10 +35,7 @@ const About = () => {
           </div>
 
           <div className="about-image">
-            <img
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
-              alt="Students"
-            />
+            <img src={image} alt="Students" />
           </div>
         </div>
       </section>
