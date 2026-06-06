@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box; */
-  margin-top: 30%;
+  /* margin-top: 30%; */
   max-height: fit-content;
   position: sticky;
 }
@@ -24,7 +24,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
   padding-top: 50px;
-  color: rgb(161, 105, 32);
+  color: rgb(224, 39, 39);
 }
 .footer p {
   font-family: sans-serif, serif;
