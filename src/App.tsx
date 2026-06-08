@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import About from "./Pages/About";
-
+import CoursePage from "./Pages/CoursePage";
 const App = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/course" element={<Course />} />
+        <Route path="/course" element={<CoursePage />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>

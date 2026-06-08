@@ -2,11 +2,38 @@ import "./CoursePage.css";
 import course1 from "../assets/images/banner2.jpg";
 import course2 from "../assets/images/student2.jpg";
 import course3 from "../assets/images/student1.jpg";
-
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 const Course = () => {
   return (
     <>
-      <section className="course-hero">
+      <section className="header">
+        <nav>
+          <Link to="/home">
+            <img src={logo} />
+          </Link>
+          <div className="nav-links" id="navLinks">
+            {/* <i className="fa-solid fa-times" onclick="hideMenu()"></i> */}
+            <ul>
+              <li>
+                <Link to="/home">HOME</Link>
+              </li>
+              <li>
+                <Link to="/about">ABOUT</Link>
+              </li>
+              <li>
+                <Link to="/course">COURSE</Link>
+              </li>
+              <li>
+                <Link to="/blog">BLOG</Link>
+              </li>
+              <li>
+                <Link to="/contact">CONTACT</Link>
+              </li>
+            </ul>
+          </div>
+          {/* <i className="fa-solid fa-bars" onclick="showMenu()"></i> */}
+        </nav>
         <div className="hero-content">
           <h1>Our Courses</h1>
           <p>
@@ -114,7 +141,9 @@ const Course = () => {
         <p>
           Take the next step toward achieving your academic and career goals.
         </p>
-        <button>Apply Now</button>
+        <Link to="/register">
+          <button>Apply Now</button>
+        </Link>
       </section>
     </>
   );
