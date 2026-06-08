@@ -41,9 +41,9 @@ const Header = () => {
             need to learn HTML, CSS, <br />
             javascript, and we are good to go
           </p>
-          <a href="#" className="hero-btn">
+          <Link to="/about" className="hero-btn">
             Visit us to know more
-          </a>
+          </Link>
         </div>
         {/* <!-- main section  ends here --> */}
       </section>
