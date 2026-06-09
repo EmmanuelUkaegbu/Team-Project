@@ -241,9 +241,7 @@ nav img {
   flex-direction: column;
 }
 .foot4 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.961), rgba(0, 0, 0, 0.945)),
-    url(../assets/imagesblog/a98ffec9560d4286a71b938ae521bee3.jpg);
+  background-image: url(../assets/imagesblog/a98ffec9560d4286a71b938ae521bee3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -257,6 +255,9 @@ nav img {
   justify-content: center;
   color: white;
   margin-top: 15px;
+}
+.foot4 p {
+  color: white;
 }
 @media (max-width: 700px) {
   .nav-links {
