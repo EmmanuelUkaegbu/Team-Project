@@ -1,12 +1,40 @@
 import "./About.css";
 import image from "../assets/images/library.png";
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <>
-      {/* Hero Section */}
-      <section className="about-hero">
-        <div className="about-overlay">
+    <div>
+      <section className="header">
+        <nav>
+          <Link to="./index.html">
+            <img src={logo} />
+          </Link>
+          <div className="nav-links" id="navLinks">
+            {/* <i className="fa-solid fa-times" onclick="hideMenu()"></i> */}
+            <ul>
+              <li>
+                <Link to="/home">HOME</Link>
+              </li>
+              <li>
+                <Link to="/about">ABOUT</Link>
+              </li>
+              <li>
+                <Link to="/course">COURSE</Link>
+              </li>
+              <li>
+                <Link to="./">BLOG</Link>
+              </li>
+              <li>
+                <Link to="./">CONTACT</Link>
+              </li>
+            </ul>
+          </div>
+          {/* <i className="fa-solid fa-bars" onclick="showMenu()"></i> */}
+        </nav>
+
+        <div className="head-main-section">
           <h1>About Our University</h1>
           <p>
             Empowering students with knowledge, innovation, and opportunities to
@@ -108,9 +136,11 @@ const About = () => {
       <section className="about-cta">
         <h2>Ready To Begin Your Journey?</h2>
         <p>Join thousands of students building their future with us.</p>
-        <button>Apply Now</button>
+        <Link to="/register">
+          <button>Apply Now</button>
+        </Link>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 .course-hero {
   height: 60vh;
-  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  background:
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("../assets/images/banner.png");
   background-size: cover;
   background-position: center;
@@ -17,10 +18,12 @@
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 15px;
+  margin-top: 70px;
 }
 
 .hero-content p {
   font-size: 18px;
+  color: #ddd;
 }
 
 .title {
@@ -123,7 +126,8 @@
   text-align: center;
   border-radius: 20px;
   color: white;
-  background: linear-gradient(rgba(244, 67, 54, 0.9), rgba(244, 67, 54, 0.9)),
+  background:
+    linear-gradient(rgba(244, 67, 54, 0.9), rgba(244, 67, 54, 0.9)),
     url("../assets/images/banner.png");
   background-size: cover;
 }
@@ -140,4 +144,8 @@
   border-radius: 30px;
   cursor: pointer;
   font-weight: 600;
+}
+.admission button:hover {
+  background: rgb(3, 3, 31);
+  color: white;
 }
