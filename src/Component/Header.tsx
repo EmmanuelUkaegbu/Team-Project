@@ -1,21 +1,32 @@
-import "./Header.css";
-import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import "./Header.css";
+import Logopng from "../assets/Images/logo.png";
+
 const Header = () => {
   return (
     <div>
       <section className="header">
         <nav>
-          <Link to="./index.html">
-            <img src={logo} />
+          <Link to="index.html">
+            <img src={Logopng} />
           </Link>
+
           <div className="nav-links" id="navLinks">
-            {/* <i className="fa-solid fa-times" onclick="hideMenu()"></i> */}
             <ul>
               <li>
-                <Link to="./">HOME</Link>
+                <Link to="">HOME</Link>
               </li>
               <li>
+                <Link to="">ABOUT</Link>
+              </li>
+              <li>
+                <Link to="">COURSE</Link>
+              </li>
+              <li>
+                <Link to="">BLOG</Link>
+              </li>
+              <li>
+                <Link to="">CONTACT</Link>
                 <Link to="/about">ABOUT</Link>
               </li>
               <li>
@@ -29,11 +40,10 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          {/* <i className="fa-solid fa-bars" onclick="showMenu()"></i> */}
         </nav>
 
-        {/* <!-- nav header ends here--> */}
-        {/* <!-- main section  --> */}
+        {/* <!-- nav header ends here-->
+      <!-- main section  --> */}
         <div className="head-main-section">
           <h1>World's Biggest University</h1>
           <p>
@@ -41,12 +51,14 @@ const Header = () => {
             need to learn HTML, CSS, <br />
             javascript, and we are good to go
           </p>
+          <Link to="#" className="hero-btn">
           <Link to="/about" className="hero-btn">
             Visit us to know more
           </Link>
         </div>
         {/* <!-- main section  ends here --> */}
       </section>
+      ;
     </div>
   );
 };
