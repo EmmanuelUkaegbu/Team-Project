@@ -15,16 +15,16 @@ const Blog = () => {
           <div className="nav-links" id="navLinks">
             <ul>
               <li>
-                <Link to="">HOME</Link>
+                <Link to="/home">HOME</Link>
               </li>
               <li>
-                <Link to="">ABOUT</Link>
+                <Link to="/about">ABOUT</Link>
               </li>
               <li>
-                <Link to="">COURSE</Link>
+                <Link to="/course">COURSE</Link>
               </li>
               <li>
-                <Link to="">BLOG</Link>
+                <Link to="/blog">BLOG</Link>
               </li>
               <li>
                 <Link to="">CONTACT</Link>

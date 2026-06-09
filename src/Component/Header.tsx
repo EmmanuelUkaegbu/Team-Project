@@ -14,24 +14,15 @@ const Header = () => {
           <div className="nav-links" id="navLinks">
             <ul>
               <li>
-                <Link to="">HOME</Link>
+                <Link to="/home">HOME</Link>
               </li>
               <li>
-                <Link to="">ABOUT</Link>
-              </li>
-              <li>
-                <Link to="">COURSE</Link>
-              </li>
-              <li>
-                <Link to="">BLOG</Link>
-              </li>
-              <li>
-                <Link to="">CONTACT</Link>
                 <Link to="/about">ABOUT</Link>
               </li>
               <li>
                 <Link to="/course">COURSE</Link>
               </li>
+
               <li>
                 <Link to="/blog">BLOG</Link>
               </li>
@@ -51,7 +42,7 @@ const Header = () => {
             need to learn HTML, CSS, <br />
             javascript, and we are good to go
           </p>
-          <Link to="#" className="hero-btn">
+
           <Link to="/about" className="hero-btn">
             Visit us to know more
           </Link>
