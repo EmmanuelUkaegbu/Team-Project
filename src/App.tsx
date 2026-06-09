@@ -5,7 +5,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Blog from "./Pages/Blog";
 import About from "./Pages/About";
-import Course from "./Pages/CoursePage";
+
 import CoursePage from "./Pages/CoursePage";
 const App = () => {
   return (
