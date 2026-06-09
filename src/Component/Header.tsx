@@ -27,6 +27,16 @@ const Header = () => {
               </li>
               <li>
                 <Link to="">CONTACT</Link>
+                <Link to="/about">ABOUT</Link>
+              </li>
+              <li>
+                <Link to="/course">COURSE</Link>
+              </li>
+              <li>
+                <Link to="/blog">BLOG</Link>
+              </li>
+              <li>
+                <Link to="/contact">CONTACT</Link>
               </li>
             </ul>
           </div>
@@ -42,6 +52,7 @@ const Header = () => {
             javascript, and we are good to go
           </p>
           <Link to="#" className="hero-btn">
+          <Link to="/about" className="hero-btn">
             Visit us to know more
           </Link>
         </div>
