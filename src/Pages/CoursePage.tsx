@@ -1,9 +1,9 @@
 import "./CoursePage.css";
-import course1 from "../assets/images/banner2.jpg";
-import course2 from "../assets/images/student2.jpg";
-import course3 from "../assets/images/student1.jpg";
+import course1 from "../assets/Images/banner2.jpg";
+import course2 from "../assets/Images/student2.jpg";
+import course3 from "../assets/Images/student1.jpg";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/Images/logo.png";
 const Course = () => {
   return (
     <>
