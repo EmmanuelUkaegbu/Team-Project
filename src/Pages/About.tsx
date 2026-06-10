@@ -1,6 +1,6 @@
 import "./About.css";
-import image from "../assets/Images/library.png";
-import logo from "../assets/Images/logo.png";
+import image from "../../dist/assets/library-BlaYtYrb.png";
+import logo from "../../dist/assets/logo-B8xkW9QZ.png";
 import { Link } from "react-router-dom";
 
 const About = () => {

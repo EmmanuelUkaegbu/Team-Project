@@ -3,7 +3,7 @@ import course1 from "../assets/Images/banner2.jpg";
 import course2 from "../assets/Images/student2.jpg";
 import course3 from "../assets/Images/student1.jpg";
 import { Link } from "react-router-dom";
-import logo from "../assets/Images/logo.png";
+import logo from "../../dist/assets/logo-B8xkW9QZ.png";
 const Course = () => {
   return (
     <>
